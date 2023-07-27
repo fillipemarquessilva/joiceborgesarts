@@ -21,21 +21,31 @@ export default function Carrossel() {
 
   return (
     <div className="mt-8">
-      <Carousel
-        showStatus={false}
-        showIndicators={true}
-        showThumbs={false}
-        infiniteLoop={true}
-        autoPlay={true}
-        interval={5000}
-      >
-        {pinturas.map((pintura, index) => (
-          <div key={index} className="text-center">
-            <img src={pintura.imagemUrl} alt={pintura.titulo} className="mx-auto w-3/4" />
-            <p className="mt-4 font-bold">{pintura.titulo}</p>
-          </div>
-        ))}
-      </Carousel>
+      {/* Renderizar o carrossel apenas na versão mobile */}
+      <div className="md:hidden">
+        <Carousel
+          showStatus={false}
+          showIndicators={true}
+          showThumbs={false}
+          infiniteLoop={true}
+          autoPlay={true}
+          interval={5000}
+        >
+          {pinturas.map((pintura, index) => (
+            <div key={index} className="text-center">
+              <img
+                src={pintura.imagemUrl}
+                className="w-full h-60 mx-auto my-auto mb-4"
+              />
+            </div>
+          ))}
+        </Carousel>
+      </div>
     </div>
   );
 }
+
+
+
+
+

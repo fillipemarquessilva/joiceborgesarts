@@ -3,17 +3,19 @@
 import { motion } from 'framer-motion';
 import Obras from './Obras'
 import { BsWhatsapp } from 'react-icons/bs';
+import Link from 'next/link';
+import Carrossel from './Carrossel';
 
 export default function Section() {
   return (
     <>
-      <div className="bg-gradient-to-b from-blue-100  via-white to-orange-300 h-full">
+      <div className="h-full bg-gradient-to-b from-blue-100 via-white to-orange-300">
         {/* Grade */}
         <div className="grid md:grid-cols-2 md:flex md:justify-center md:items-center text-center gap-4">
           {/* Imagem */}
           <img
             src="/perfil.jpg"
-            className="w-96 h-96 p-4 mt-8 mx-auto md:mx-0"
+            className="w-96 h-96 rounded-full p-4 mt-8 mx-auto md:mx-0"
             alt="Perfil"
           />
 
@@ -21,7 +23,7 @@ export default function Section() {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
+            transition={{ duration: 1, delay: 0.2 }}
             className="p-4"
          >
             <h1 className="text-4xl text-blue-700 font-bold px-4 py-4">Joice Borges Art</h1>
@@ -40,10 +42,11 @@ export default function Section() {
             </p>
             </motion.div>
         </div>
+        <Carrossel></Carrossel>
         <Obras></Obras>
-        <BsWhatsapp href="https://api.whatsapp.com/send?phone=5561981350444&text=Ol%C3%A1,%20vim%20do%20site%0AGostaria%20de%20marcar%20um%20atendimento" className='fixed bottom-10 cursor-pointer  right-10 w-10 h-10 text-white bg-green-500 rounded-full'>
-          <a className="mb-10 inline-block shadow-md rounded-md border border-transparent bg-amber-400 px-8 py-3 text-center font-medium text-white hover:bg-amber-500" about="blank"  href="https://api.whatsapp.com/send?phone=5561981350444&text=Ol%C3%A1,%20vim%20do%20site%0AGostaria%20de%20marcar%20um%20atendimento" >Quero minha armação agora</a>
-        </BsWhatsapp>
+        <Link href="https://api.whatsapp.com/send?phone=5561995682323&text=Ol%C3%A1,%20vim%20do%20site%0AGostaria%20de%20marcar%20um%20atendimento" about='blank' className='fixed bottom-10 cursor-pointer  right-10 w-10 h-10 text-white bg-green-500 rounded-full'>
+          <BsWhatsapp className='w-10 h-10 fixed bottom-30 right-10'/>
+        </Link>
       </div>
     </>
   );

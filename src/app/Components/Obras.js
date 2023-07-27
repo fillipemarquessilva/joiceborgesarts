@@ -42,6 +42,8 @@ export default function Obras() {
     ];
 
     return (
+        <>
+        <h1 className="text-2xl text-center font-bold">Obras expressionistas</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-8">
             {obras.map((obra, index) => (
                     <motion.div
@@ -61,5 +63,6 @@ export default function Obras() {
                     </motion.div>
             ))}
         </div>
+        </>
     );
 }
