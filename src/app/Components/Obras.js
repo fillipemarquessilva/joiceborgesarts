@@ -58,8 +58,8 @@ export default function Obras() {
                             alt={obra.titulo}
                             className="w-full h-60 object-cover"
                         />
-                        <p className="font-bold mt-2">{obra.titulo}</p>
-                        <p className="font-bold mt-2">Descrição</p>
+                        <p className="font-bold mt-2 text-white">{obra.titulo}</p>
+                        <p className="font-bold mt-2 text-white">Descrição</p>
                     </motion.div>
             ))}
         </div>

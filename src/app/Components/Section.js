@@ -9,7 +9,7 @@ import Carrossel from './Carrossel';
 export default function Section() {
   return (
     <>
-      <div className="h-full bg-gradient-to-b from-blue-100 via-white to-orange-300">
+      <div className="h-full bg-gradient-to-b from-sky-800 to-orange-700">
         {/* Grade */}
         <div className="grid md:grid-cols-2 md:flex md:justify-center md:items-center text-center gap-4">
           {/* Imagem */}
@@ -25,8 +25,11 @@ export default function Section() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
             className="p-4"
-         >
-            <h1 className="text-4xl text-blue-700 font-bold px-4 py-4">Joice Borges Art</h1>
+          >
+            <div className='flex flex-col'>
+              <h1 className="italic text-4xl text-white font-bold">Joice Borges</h1>
+              <h2 className='italic font-semibold text-sm text-white'>Artista Plástica</h2>
+            </div>
             <p className="text-lg font-semibold">
               Suas obras têm a intenção de estimular o imaginário ainda
               inconsciente, através de formas e da sinergia das cores
@@ -40,12 +43,12 @@ export default function Section() {
               Pérsia Meneghetti, nasceu em Bauru/SP, reside e trabalha na cidade
               de São Paulo desde meados de 1987.
             </p>
-            </motion.div>
+          </motion.div>
         </div>
         <Carrossel></Carrossel>
         <Obras></Obras>
         <Link href="https://api.whatsapp.com/send?phone=5561995682323&text=Ol%C3%A1,%20vim%20do%20site%0AGostaria%20de%20marcar%20um%20atendimento" about='blank' className='fixed bottom-10 cursor-pointer  right-10 w-10 h-10 text-white bg-green-500 rounded-full'>
-          <BsWhatsapp className='w-10 h-10 fixed bottom-30 right-10'/>
+          <BsWhatsapp className='w-10 h-10 fixed bottom-30 right-10' />
         </Link>
       </div>
     </>
