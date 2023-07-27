@@ -28,7 +28,7 @@ export default function Section() {
           >
             <div className='flex flex-col'>
               <h1 className="italic text-4xl text-white font-bold">Joice Borges</h1>
-              <h2 className='italic font-semibold text-sm text-white'>Artista Plástica</h2>
+              <h2 className='italic font-semibold text-sm text-white'>Artista visual</h2>
             </div>
             <p className="text-lg font-semibold">
               Suas obras têm a intenção de estimular o imaginário ainda
@@ -47,7 +47,7 @@ export default function Section() {
         </div>
         <Carrossel></Carrossel>
         <Obras></Obras>
-        <Link href="https://api.whatsapp.com/send?phone=5561995682323&text=Ol%C3%A1,%20vim%20do%20site%0AGostaria%20de%20marcar%20um%20atendimento" about='blank' className='fixed bottom-10 cursor-pointer  right-10 w-10 h-10 text-white bg-green-500 rounded-full'>
+        <Link href="https://api.whatsapp.com/send?phone=5561995682323&text=Ol%C3%A1,%20vim%20do%20site%0AGostaria%20de%20marcar%20um%20atendimento" className='fixed bottom-10 cursor-pointer right-10 w-10 h-10 text-white bg-green-500 rounded-full'>
           <BsWhatsapp className='w-10 h-10 fixed bottom-30 right-10' />
         </Link>
       </div>
