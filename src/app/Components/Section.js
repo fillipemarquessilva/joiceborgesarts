@@ -9,7 +9,7 @@ import Carrossel from './Carrossel';
 export default function Section() {
   return (
     <>
-      <div className="h-full bg-gradient-to-b from-sky-800 to-orange-700">
+      <div className="h-full bg-gradient-to-b from-sky-800 to-amber-600">
         {/* Grade */}
         <div className="grid md:grid-cols-2 md:flex md:justify-center md:items-center text-center gap-4">
           {/* Imagem */}
@@ -26,11 +26,11 @@ export default function Section() {
             transition={{ duration: 1, delay: 0.2 }}
             className="p-4"
           >
-            <div className='flex flex-col'>
+            <div className='flex flex-col bg-blue-700'>
               <h1 className="italic text-4xl text-white font-bold">Joice Borges</h1>
               <h2 className='italic font-semibold text-sm text-white'>Artista visual</h2>
             </div>
-            <p className="text-lg font-semibold">
+            <p className="text-lg text-white font-semibold mt-6">
               Suas obras têm a intenção de estimular o imaginário ainda
               inconsciente, através de formas e da sinergia das cores
               contrastantes provenientes da natureza.
