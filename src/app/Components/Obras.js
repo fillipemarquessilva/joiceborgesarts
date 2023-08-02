@@ -43,7 +43,7 @@ export default function Obras() {
 
     return (
         <>
-        <h1 className="text-2xl text-center font-bold">Obras expressionistas</h1>
+        <h1 className="text-4xl md:text-5xl text-center bg-gradient-to-r text-transparent bg-clip-text from-orange-500 to-pink-400 font-bold">Obras expressionistas</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-8">
             {obras.map((obra, index) => (
                     <motion.div
@@ -51,7 +51,7 @@ export default function Obras() {
                         className="text-center"
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 2, delay: 0.8 }}
+                        transition={{ duration: 1, delay: 0.2 }}
                     >
                         <img
                             src={obra.imagemUrl}

@@ -28,7 +28,7 @@ export default function Footer() {
           href="mailto:SEU_EMAIL"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white hover:text-yellow-500 transition-all"
+          className="text-white hover:text-red-500 transition-all"
         >
           <AiOutlineMail className="w-9 h-9"></AiOutlineMail>
         </a>
